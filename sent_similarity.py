@@ -3,6 +3,8 @@ import torch
 from sentence_transformers import SentenceTransformer,util
 embedder=SentenceTransformer('xlm-r-100langs-bert-base-nli-stsb-mean-tokens')
 corpus=['boy','girl','india','fruit']
+corpus1=['प्रररसिद्ध','शुरू','पास','नदी','मध्य','मूल','चार','देशों','रंग']
+queries1=['पहली']
 corpus_embed = embedder.encode(corpus, convert_to_tensor=True)
 queries=['orange']
 top_k=4
